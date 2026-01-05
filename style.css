@@ -1,0 +1,169 @@
+:root{
+  --brand: #7dd3fc;
+  --brand2:#a78bfa;
+  --dark:#0b1220;
+  --glass: rgba(255,255,255,.10);
+  --glass2: rgba(255,255,255,.14);
+  --white10: rgba(255,255,255,.10);
+  --white20: rgba(255,255,255,.20);
+}
+
+body{
+  background:
+    radial-gradient(900px 500px at 20% 10%, rgba(125,211,252,.35), transparent 60%),
+    radial-gradient(900px 500px at 80% 0%, rgba(167,139,250,.28), transparent 60%),
+    linear-gradient(180deg, #0b1220 0%, #0b1220 50%, #f6f7fb 50%, #f6f7fb 100%);
+  min-height: 100vh;
+}
+
+.text-brand{ color: var(--brand) !important; }
+
+.navbar-glass{
+  backdrop-filter: blur(14px);
+  background: rgba(11,18,32,.55);
+}
+
+.border-white-10{ border-color: var(--white10) !important; }
+
+.brand-dot{
+  width: 12px; height: 12px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--brand), var(--brand2));
+  box-shadow: 0 0 0 6px rgba(125,211,252,.15);
+}
+
+.navbar .nav-link{
+  color: rgba(255,255,255,.82) !important;
+  border-radius: 10px;
+  padding: .55rem .75rem;
+  transition: transform .15s ease, background .15s ease;
+}
+.navbar .nav-link:hover{
+  background: rgba(255,255,255,.08);
+  transform: translateY(-1px);
+}
+
+.btn-brand{
+  color: #08101d;
+  background: linear-gradient(135deg, var(--brand), var(--brand2));
+  border: 0;
+  box-shadow: 0 10px 30px rgba(125,211,252,.18);
+}
+.btn-brand:hover{ filter: brightness(1.04); }
+
+.hero-wrap{
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+}
+.hero-glow{
+  position:absolute; inset:-40%;
+  background:
+    radial-gradient(closest-side, rgba(125,211,252,.16), transparent 70%),
+    radial-gradient(closest-side, rgba(167,139,250,.12), transparent 70%);
+  filter: blur(20px);
+  pointer-events:none;
+}
+
+.badge-soft{
+  display:inline-flex; align-items:center;
+  padding:.5rem .8rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.12);
+}
+
+.text-white-75{ color: rgba(255,255,255,.75) !important; }
+
+.pill{
+  display:inline-flex; align-items:center; gap:.35rem;
+  padding:.35rem .6rem;
+  border-radius: 999px;
+  border:1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.06);
+}
+
+.glass-card{
+  border-radius: 18px;
+  background: rgba(255,255,255,.10);
+  border: 1px solid rgba(255,255,255,.14);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 18px 60px rgba(0,0,0,.22);
+}
+
+.icon-bubble{
+  width: 44px; height: 44px;
+  border-radius: 14px;
+  display:flex; align-items:center; justify-content:center;
+  background: rgba(255,255,255,.10);
+  border: 1px solid rgba(255,255,255,.14);
+}
+
+.status-dot{
+  width: 12px; height: 12px; border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 0 6px rgba(34,197,94,.15);
+}
+
+.btn-quick{
+  display:flex; align-items:center;
+  border-radius: 14px;
+  padding: .85rem 1rem;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.12);
+  color: #fff;
+  transition: transform .15s ease, background .15s ease;
+}
+.btn-quick:hover{
+  background: rgba(255,255,255,.12);
+  transform: translateY(-1px);
+  color:#fff;
+}
+.btn-quick.lock{
+  background: rgba(0,0,0,.25);
+}
+
+.code-pill{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  padding: .1rem .35rem;
+  border-radius: 8px;
+  background: rgba(0,0,0,.25);
+  border: 1px solid rgba(255,255,255,.12);
+  color: rgba(255,255,255,.92);
+}
+
+main{
+  background: #f6f7fb;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  margin-top: -22px;
+  box-shadow: 0 -10px 40px rgba(0,0,0,.10);
+}
+
+.card-soft{
+  border: 0;
+  border-radius: 18px;
+  box-shadow: 0 14px 40px rgba(15, 23, 42, .08);
+}
+.icon-tile{
+  width: 42px; height: 42px;
+  border-radius: 14px;
+  display:flex; align-items:center; justify-content:center;
+  color: #0b1220;
+}
+.bg-1{ background: linear-gradient(135deg, #a7f3d0, #7dd3fc); }
+.bg-2{ background: linear-gradient(135deg, #fde68a, #fca5a5); }
+.bg-3{ background: linear-gradient(135deg, #c4b5fd, #93c5fd); }
+.bg-4{ background: linear-gradient(135deg, #fecaca, #f9a8d4); }
+.bg-5{ background: linear-gradient(135deg, #7dd3fc, #a78bfa); }
+
+.modal-glass{
+  background: rgba(11,18,32,.92);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.12);
+  backdrop-filter: blur(16px);
+  border-radius: 18px;
+}
+
+footer{
+  background: #f6f7fb;
+}
