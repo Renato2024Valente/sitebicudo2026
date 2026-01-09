@@ -1,7 +1,7 @@
 // ================================
 // CONFIGURAÇÕES
 // ================================
-const GESTAO_PASSWORD = "bicudo1243##@";
+const GESTAO_PASSWORD = "bicudo1243##";
 
 // COLOQUE AQUI o link da sua ATA DIGITAL quando estiver pronto:
 const ATA_DIGITAL_URL = "https://SUA-ATA-DIGITAL.onrender.com/";
